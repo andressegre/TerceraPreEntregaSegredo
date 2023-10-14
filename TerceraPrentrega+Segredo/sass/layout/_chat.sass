@@ -1,0 +1,18 @@
+.encabezado
+  @include flex-row-center
+
+
+.chat__recibidos
+  background-color: green
+  color: white
+  text-align: start
+  padding: 10px
+
+.chat__enviados
+  @extend .chat__recibidos
+  background-color: tomato
+  text-align: end
+
+
+.escribirMsj
+  @include flex-row-center

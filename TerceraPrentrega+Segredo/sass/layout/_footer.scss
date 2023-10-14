@@ -1,0 +1,18 @@
+$colorRedes: (
+  instagram: orange,
+  linkedin: blue,
+  mail: red
+);
+
+
+footer {
+  @each $redSocial, $colorRed in $colorRedes {
+    .color-#{$redSocial}{
+      color: $colorRed;
+    }
+  }
+
+  p {
+    background-color: map-get($colorRedes, instagram);
+  }
+}

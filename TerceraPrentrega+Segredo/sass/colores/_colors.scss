@@ -1,0 +1,7 @@
+$colores: red, cyan, green, yellow, white, black, brown, gray;
+
+@each $var in $colores {
+  .color-#{$var}{
+    background-color: #{$var};
+  }
+}

@@ -1,0 +1,16 @@
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+}
+
+@mixin button ($ancho, $alto) {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: darkslategray;
+  color: orange;
+  margin: 10px;
+  width: $ancho;
+  height: $alto;
+}

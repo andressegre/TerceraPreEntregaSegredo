@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: $primary;
+  width: $ancho;
+  display: flex;
+
+  aside {
+    background-color: $secondary;
+    width: $ancho / 2;
+  }
+
+  section {
+    width: $ancho / 2;
+    background-color: gray;
+  }
+}
+
+@for $i from 1 through 10 {
+  .col-#{$i} {
+    width: 10% * $i
+  }
+}

@@ -1,0 +1,6 @@
+$convColor: red, orange, cyan, purple
+
+aside
+  @for $i from 1 through 4
+    .conversacion:nth-child(#{$i})
+      background-color: #{nth($convColor, $i)}
